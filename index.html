@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="user-scalable=0;"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <title>main</title>
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/main-media.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="./index.js"></script>
+    <!-- <script defer src="./main-wheel.js"></script> -->
   </head>
   <body>
     <header>
@@ -74,7 +79,7 @@
                     fill="#fff"
                     points="99.97,0.402 99.971,0.402 99.971,11.356 99.97,11.356 99.97,11.758 
                               99.971,11.758 99.971,22.712 99.97,22.712 99.97,23.114 117.783,23.114 117.783,22.712 102.444,22.712 102.444,11.758 
-                              115.127,11.758 115.127,11.356 102.444,11.356 102.444,0.402 117.783,0.402 117.783,0 99.97,0 			"
+                              115.127,11.758 115.127,11.356 102.444,11.356 102.444,0.402 117.783,0.402 117.783,0 99.97,0      "
                   ></polygon>
                   <rect
                     class="txt"
@@ -88,13 +93,13 @@
                     class="txt"
                     fill="#fff"
                     points="122.646,0 120.172,0 120.172,22.712 120.172,22.712 120.172,23.114 
-                              137.116,23.114 137.116,22.712 122.646,22.712 			"
+                              137.116,23.114 137.116,22.712 122.646,22.712      "
                   ></polygon>
                   <polygon
                     class="txt"
                     fill="#fff"
                     points="141.978,22.712 141.978,0 139.506,0 139.506,22.712 139.506,22.712 
-                              139.506,23.114 156.45,23.114 156.45,22.712 			"
+                              139.506,23.114 156.45,23.114 156.45,22.712      "
                   ></polygon>
                   <path
                     class="txt"
@@ -118,19 +123,20 @@
 
         <div class="menu">
           <ul>
-            <li><a href="#">BRAND</a></li>
-            <li><a href="#">OEM/ODM</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="../html/brand.html">BRAND</a></li>
+            <li><a href="../html/oemodm.html">OEM/ODM</a></li>
+            <li><a href="../html/contact.html">CONTACT</a></li>
           </ul>
         </div>
 
         <div class="icon">
-          <p>KOR</p>
-          <div class="lines">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          <a href="./html/allmenu.html">
+            <div class="lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
         </div>
       </nav>
     </header>
@@ -160,16 +166,14 @@
             </span>
           </div>
           <div class="circle">
-            <button>+</button>
             <b>BRAND STORY</b>
           </div>
         </div>
 
-
         <div class="best">
           <span>Best Product</span>
 
-          <div class="best-wrap">
+           <div class="best-wrap">
             <div class="content-txt2">
               <span>
                 그 시절 그대로,<br />
@@ -177,12 +181,11 @@
                 만들어보세요
               </span>
               <div class="circle2">
-                <button>+</button>
                 <b>PRODUCT</b>
               </div>
             </div>
-            
-            <div class="content-img">
+
+             <div class="content-img">
               <ul class="content-img-first">
                 <li>
                   <div class="content-img-txt">
@@ -193,7 +196,7 @@
                     <div>에떼르노 EGF 세럼</div>
                     <div>96,000원</div>
                   </div>
-                  <img src="/img/main/file1_1650008043enowuc431g.jpg" />
+                  <img class="cos-img" src="/img/main/file1_1650008043enowuc431g.jpg" />
                 </li>
                 <li>
                   <div class="content-img-txt">
@@ -204,10 +207,10 @@
                     <div>에떼르노 모이스처 세럼</div>
                     <div>70,000원</div>
                   </div>
-                  <img src="/img/main/file1_16500081118hbf6vbvon.jpg" />
+                  <img class="cos-img" src="/img/main/file1_16500081118hbf6vbvon.jpg" />
                 </li>
               </ul>
-              
+
               <ul class="content-img-second">
                 <li>
                   <div class="content-img-txt">
@@ -218,7 +221,7 @@
                     <div>에떼르노 콜라겐 세럼</div>
                     <div>80,000원</div>
                   </div>
-                  <img src="/img/main/file1_1650008078q4b2hs8386.jpg" />
+                  <img class="cos-img" src="/img/main/file1_1650008078q4b2hs8386.jpg" />
                 </li>
                 <li>
                   <div class="content-img-txt">
@@ -229,7 +232,7 @@
                     <div>에떼르노 비타-C 세럼</div>
                     <div>80,000원</div>
                   </div>
-                  <img src="/img/main/file1_1650008156gt5l0l43zm.jpg" />
+                  <img class="cos-img" src="/img/main/file1_1650008156gt5l0l43zm.jpg" />
                 </li>
               </ul>
             </div>
@@ -278,29 +281,44 @@
             <p>@rooicell_official</p>
             <p>Instagram</p>
           </div>
-    
+
           <div class="Insta-img">
             <p>
-              <img class="Insta-img-01" src="../img/main/file1_1650002902aj9f9lkla3.jpg" />
+              <img
+                class="Insta-img-01"
+                src="../img/main/file1_1650002902aj9f9lkla3.jpg"
+              />
             </p>
             <p>
-              <img class="Insta-img-02" src="../img/main/file1_16500029154pri8wja3e.jpg" />
+              <img
+                class="Insta-img-02"
+                src="../img/main/file1_16500029154pri8wja3e.jpg"
+              />
             </p>
             <p>
-              <img class="Insta-img-03" src="../img/main/file1_1650002926ntslx0s69m.jpg" />
+              <img
+                class="Insta-img-03"
+                src="../img/main/file1_1650002926ntslx0s69m.jpg"
+              />
             </p>
             <p>
-              <img class="Insta-img-04" src="../img/main/file1_1650002949cijkhtz8lu.jpg" />
+              <img
+                class="Insta-img-04"
+                src="../img/main/file1_1650002949cijkhtz8lu.jpg"
+              />
             </p>
             <p>
-              <img class="Insta-img-05" src="../img/main/file1_1650002961sp5zvh148r.jpg" />
+              <img
+                class="Insta-img-05"
+                src="../img/main/file1_1650002961sp5zvh148r.jpg"
+              />
             </p>
           </div>
         </div>
       </div>
     </main>
 
-    <footer>
+   <footer>
       <div class="last-content">
         <h1>
           <svg
@@ -366,7 +384,7 @@
                     fill="#fff"
                     points="99.97,0.402 99.971,0.402 99.971,11.356 99.97,11.356 99.97,11.758 
                               99.971,11.758 99.971,22.712 99.97,22.712 99.97,23.114 117.783,23.114 117.783,22.712 102.444,22.712 102.444,11.758 
-                              115.127,11.758 115.127,11.356 102.444,11.356 102.444,0.402 117.783,0.402 117.783,0 99.97,0 			"
+                              115.127,11.758 115.127,11.356 102.444,11.356 102.444,0.402 117.783,0.402 117.783,0 99.97,0      "
                   ></polygon>
                   <rect
                     class="txt"
@@ -380,13 +398,13 @@
                     class="txt"
                     fill="#fff"
                     points="122.646,0 120.172,0 120.172,22.712 120.172,22.712 120.172,23.114 
-                              137.116,23.114 137.116,22.712 122.646,22.712 			"
+                              137.116,23.114 137.116,22.712 122.646,22.712      "
                   ></polygon>
                   <polygon
                     class="txt"
                     fill="#fff"
                     points="141.978,22.712 141.978,0 139.506,0 139.506,22.712 139.506,22.712 
-                              139.506,23.114 156.45,23.114 156.45,22.712 			"
+                              139.506,23.114 156.45,23.114 156.45,22.712      "
                   ></polygon>
                   <path
                     class="txt"
@@ -410,7 +428,7 @@
 
         <div class="last-txt">
           <div class="last-txt01">
-            <p class="last-txt01-line">(주)라이프투게더</p>
+            <p class="last-txt01-line">(주)라이프투게더 &nbsp;</p>
             <p>회장 : 송운서</p>
           </div>
           <div class="last-txt02">
@@ -428,22 +446,18 @@
             <p class="last-txt04-line2">FAX : 033-243-4780</p>
             <p>E-mail : rooicell@lifetogether.co.kr</p>
           </div>
-        </div>
-
-        <div class="sns">
-          <ul>
-            <li><img src="../img/main/footer_sns_b.png" /></li>
-            <li><img src="../img/main/footer_sns_f.png" /></li>
-            <li><img src="../img/main/footer_sns_y.png" /></li>
-            <li><img src="../img/main/footer_sns_i.png" /></li>
-          </ul>
-        </div>
+        </div>  
+      </div>
+      <div class="sns">
+        <img src="../img/main/footer_sns_b.png" />
+        <img src="../img/main/footer_sns_f.png" />
+        <img src="../img/main/footer_sns_y.png" />
+        <img src="../img/main/footer_sns_i.png" />
       </div>
 
       <div class="copyright">
         <p>Copyright © 2022 LIFETOGETHER CO.,LTDAll Rights Reserved.</p>
       </div>
     </footer>
-
   </body>
 </html>
